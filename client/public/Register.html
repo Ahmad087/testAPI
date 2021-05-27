@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediMed Register</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container col-sm-8">
+      <img src="./MediMed.png" width="60" height="60">
+      <a class="navbar-brand p-1" href="index.html">MediMed Register</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="logout" class="nav-link" href="index.html"><span
+                class="oi oi-account-logout link-icon"></span>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  End Navigation -->
+
+  <!-- Register form-->
+  <!-- Source code for the form taken from https://getbootstrap.com/docs/4.0/components/forms/ on the 27/04/21 -->
+  <div class="row col-md-12">
+    <div class="col-sm-6 offset-md-3">
+      <h1>Register new user</h1>
+      <form>
+        <div class="form-group mb-3">
+          <label for="exampleInputEmail1" class="font-weight-bold">Patients First Name</label>
+          <input type="text" class="form-control" id="Fname" aria-describedby="FnameHelp" placeholder="John">
+          <small id="FnameHelp" class="form-text text-muted">Enter patient's first name</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="font-weight-bold">Patients Last Name</label>
+          <input type="text" class="form-control" id="Lname" aria-describedby="LnameHelp" placeholder="Smith">
+          <small id="LnameHelp" class="form-text text-muted">Enter patient's last name</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="font-weight-bold">Patients Address</label>
+          <input type="text" class="form-control" id="InputAddress1" aria-describedby="addressHelp"
+            placeholder="01 Street Dublin 11">
+          <small id="addressHelp" class="form-text text-muted"> Enter patient's address</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="font-weight-bold">Patients Phone Number</label>
+          <input type="tel" class="form-control" id="phonenum" aria-describedby="numhelp" placeholder="089123456789">
+          <small id="numhelp" class="form-text text-muted">Enter patient's contact number</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="font-weight-bold">Patients Eircode</label>
+          <input type="text" class="form-control" id="eircode" aria-describedby="eircodehelp" placeholder="D08 154D">
+          <small id="eircodehelp" class="form-text text-muted">Enter patient's Eircode</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="font-weight-bold">Patients Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email@email.com">
+          <small id="email" class="form-text text-muted">Enter patient's email</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="font-weight-bold">Patients Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <small id="password" class="form-text text-muted">Create patient's password</small>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Above information is correct</label>
+        </div>
+        <button type="submit" class="btn btn-success btn-block mb-5 mt-3">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-2 bg-secondary text-white">
+      MediMed &copy; 2021
+      <a class="text-white" href="#"><u>Cookie Policy</u></a>
+      <a class="text-white" href="#"><u>Privacy Policy</u></a>
+      <a class="text-white" href="#"><u>Terms of Services</u></a>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Bootstrap 4 Dependencies -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./font/css/open-iconic-bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>

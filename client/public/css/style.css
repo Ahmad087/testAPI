@@ -1,0 +1,55 @@
+.hidden {
+    display: none;
+}
+label {
+margin-bottom: 10px;
+display: block;
+}
+
+.navbar {
+min-height: 100px;
+}
+
+.link-icon {
+    margin-right: 0.3em;
+}
+
+footer{
+  width: 100%;
+  margin-top: auto;
+	position: fixed;
+	bottom: 0;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
+
+  body{
+	background-image: url("background.jpg");
+	background-repeat: repeat-y;
+	background-position: top;
+	background-size: 100%;
+  }
+
+  .scrollable{ 
+    overflow-x: scroll; 
+    width:90vw; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+
+}
